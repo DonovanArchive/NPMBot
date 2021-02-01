@@ -170,5 +170,8 @@
 	"voiceConnections": "voice connections",
 	"web": "web",
 	"xp": "xp",
-	"yes": "yes"
+	"yes": "yes",
+	"registry": "registry",
+	"period": "period",
+	"downloads": "downloads"
 }

@@ -56,8 +56,8 @@ export default new Command(["registry-ping"], __filename)
 		return msg.reply({
 			embed: new EmbedBuilder(msg.gConfig.settings.lang)
 				.setDescription([
-					`{lang:${cmd.lang}.registry}: **${reg}**`,
-					`{lang:${cmd.lang}.time}: ${Time.ms((end! - start), true, true, true)}`
+					`{lang:other.lang.registry$ucwords$}: **${reg}**`,
+					`{lang:other.lang.time$ucwords$}: ${Time.ms((end! - start), true, true, true)}`
 				].join("\n"))
 				.setColor(Colors.npm)
 				.setTimestamp(new Date().toISOString())

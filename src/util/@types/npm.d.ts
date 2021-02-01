@@ -93,4 +93,11 @@ declare namespace NPM {
 		readmeFilename: string;
 		users?: Record<string, true>;
 	}
+
+	interface Downloads {
+		downloads: number;
+		start: string;
+		end: string;
+		package: string;
+	}
 }

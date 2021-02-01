@@ -6,7 +6,10 @@ import semver from "semver";
 export default class NPM {
 	static async getPackage(name: string, version?: string) {
 		return new Promise<{
-			status: number;
+			status: {
+				code: number;
+				message: string;
+			};
 			body: NPM.Package;
 		}>((a, b) => https.request({
 			method: "GET",
@@ -23,7 +26,42 @@ export default class NPM {
 				.on("error", b)
 				.on("data", (d) => data.push(d))
 				.on("end", () => a({
-					status: res.statusCode!,
+					status: {
+						code: res.statusCode!,
+						message: res.statusMessage!
+					},
+					body: JSON.parse(Buffer.concat(data).toString())
+				}))
+		})
+			.end());
+	}
+
+	static async getStats(name: string, from: string, to: string) {
+		return new Promise<{
+			status: {
+				code: number;
+				message: string;
+			};
+			body: NPM.Downloads;
+		}>((a, b) => https.request({
+			method: "GET",
+			host: "api.npmjs.org",
+			path: `/downloads/point/${from}:${to}/${name}`,
+			headers: {
+				"User-Agent": config.web.userAgent
+			},
+			protocol: "https:"
+		}, (res) => {
+			const data: Buffer[] = [];
+
+			res
+				.on("error", b)
+				.on("data", (d) => data.push(d))
+				.on("end", () => a({
+					status: {
+						code: res.statusCode!,
+						message: res.statusMessage!
+					},
 					body: JSON.parse(Buffer.concat(data).toString())
 				}))
 		})

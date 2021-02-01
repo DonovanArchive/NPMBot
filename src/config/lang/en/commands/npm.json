@@ -18,13 +18,17 @@
 		"description": "Send a ping to an npm registry.",
 		"invalidReg": "The registry url you provided ({0}) did not pass url validation.",
 		"noResponse": "We didn't get a response from the registry.",
-		"invalidResponse": "The registry returned an unexpected **{0] {1}**.",
-		"registry": "Registry",
-		"time": "Took"
+		"invalidResponse": "The registry returned an unexpected **{0] {1}**."
 	},
 	"repo": {
 		"usage": "<package-name>[@version]",
 		"description": "Get a link to a package's repository url.",
 		"none": "This package has not set a repository url. Check its [npm](https://npm.im/{0}) to see if they have something there."
+	},
+	"stats": {
+		"usage": "<package-name>[@version] [from-date] [to-date]",
+		"description": "Get the download stats for a package.",
+		"invalidDate": "Invalid date **{0}**. Provide it in the YYYY-MM-DD format.",
+		"unexpectedResponse": "We got an unexpected **{0} **{1}** from npm's api. You might have provided an invald date."
 	}
 }

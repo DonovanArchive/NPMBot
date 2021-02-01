@@ -20,9 +20,9 @@ export default new Command(["info"], __filename)
 
 		if (p === null) return msg.reply(Language.get(msg.gConfig.settings.lang, "other.general.parseError", [msg.args[0].toLowerCase()]));
 
-		const { status, body: pkg } = await NPM.getPackage(p.name);
+		const { status: { code }, body: pkg } = await NPM.getPackage(p.name);
 
-		if (status !== 200) return msg.reply(Language.get(msg.gConfig.settings.lang, "other.general.notFound", [p.name, p.version ?? "latest"]));
+		if (code !== 200) return msg.reply(Language.get(msg.gConfig.settings.lang, "other.general.notFound", [p.name, p.version ?? "latest"]));
 
 		const v = p.version === null ? { latest: pkg["dist-tags"].latest } : NPM.parseVersion(p.version, Object.keys(pkg.versions), pkg["dist-tags"]);
 		if (v === null) return msg.reply(Language.get(msg.gConfig.settings.lang, "other.general.notFound", [pkg.name, p.version ?? "latest"]));
