@@ -13,6 +13,15 @@
 		"usage": "<package-name>[@version]",
 		"description": "Get information about a package on npm."
 	},
+	"registry-ping": {
+		"usage": "[registry-url]",
+		"description": "Send a ping to an npm registry.",
+		"invalidReg": "The registry url you provided ({0}) did not pass url validation.",
+		"noResponse": "We didn't get a response from the registry.",
+		"invalidResponse": "The registry returned an unexpected **{0] {1}**.",
+		"registry": "Registry",
+		"time": "Took"
+	},
 	"repo": {
 		"usage": "<package-name>[@version]",
 		"description": "Get a link to a package's repository url.",
