@@ -44,8 +44,8 @@ export default new ClientEvent("guildCreate", async function (guild) {
 	const embed: Eris.EmbedOptions = {
 		title: "Guild Joined!",
 		description: [
-			`Guild #${this.guilds.size + 1}`,
-			`Current Total: ${this.guilds.size + 1}`,
+			`Guild #${this.guilds.size}`,
+			`Current Total: ${this.guilds.size}`,
 			"",
 			"**Guild Info**:",
 			`${config.emojis.default.dot} Name: ${guild.name}`,
