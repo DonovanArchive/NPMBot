@@ -8,6 +8,8 @@ import fetch from "node-fetch";
 import Logger from "../util/Logger";
 import CommandHelper from "../util/DiscordCommands/main";
 import { performance } from "perf_hooks";
+import EmbedBuilder from "../util/EmbedBuilder";
+import { Colors } from "../util/Constants";
 
 export default new ClientEvent("ready", async function () {
 	const start = performance.now();
@@ -62,4 +64,15 @@ export default new ClientEvent("ready", async function () {
 
 	const end = performance.now();
 	Logger.info(["General"], `Ready with ${this.guilds.size} guild${this.guilds.size === 1 ? "" : "s"}, ${this.users.size} user${this.users.size === 1 ? "" : "s"}, and ${Object.keys(this.channelGuildMap).length} guild channel${Object.keys(this.channelGuildMap).length === 1 ? "" : "s"}. Launch processing took ${(end - start).toFixed(3)}ms.`);
+	this.w.get("status")!.execute({
+		embeds: [
+			new EmbedBuilder(config.devLanguage)
+				.setColor(Colors.blue)
+				.setTimestamp(new Date().toISOString())
+				.setTitle("Ready")
+				.setDescription(`Ready with ${this.guilds.size} guild${this.guilds.size === 1 ? "" : "s"}, ${this.users.size} user${this.users.size === 1 ? "" : "s"}, and ${Object.keys(this.channelGuildMap).length} guild channel${Object.keys(this.channelGuildMap).length === 1 ? "" : "s"}.\nLaunch processing took ${(end - start).toFixed(3)}ms.`)
+				.setFooter(`${this.shards.size} Shard${this.shards.size === 1 ? "" : "s"}`)
+				.toJSON()
+		]
+	});
 });
