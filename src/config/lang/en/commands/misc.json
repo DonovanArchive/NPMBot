@@ -1,0 +1,70 @@
+{
+	"booster": {
+		"description": "Claim perks for boosting our support server.",
+		"usage": "",
+		"notABooster": "You are not a booster in our support server.",
+		"alreadyActive": "You are already marked as a booster.",
+		"done": "Congrats, your perks have been set up."
+	},
+	"bugreport": {
+		"description": "Report a bug you found in the bot.",
+		"usage": "<description>",
+		"missingTitle": "Missing report title. Separate a title a description with a pipe (|).",
+		"missingDescription": "Missing report description. Separate a title a description with a pipe (|).",
+		"done": "Your report was successfully posted.\nYou can join our support server (<{0}>), and view it, and any replies in <#805575617835040829>."
+	},
+	"help": {
+		"description": "List my commands, or get help with a command or category.",
+		"usage": "[command/category]",
+		"hoverInfo": "Hover for more info",
+		"helpMe": "Ha ha, very funny. Please specify either a command, category, or nothing.",
+		"neitherFound": "Neither a command nor category was found with what you supplied.",
+		"commandList": "Command List #{0}",
+		"cmdCount": "Total Commands: **{0}**",
+		"devOnlyCommand": "That command is developer only",
+		"devOnlyCategory": "That category is developer only.",
+		"slashTip": "TIP:\nCommands with a **\\*** beside them have a slash command variant. If your client supports them, and you invited me properly, you can type `/`, then the command and use it there. You can read more about it [here]({0}).",
+		"large": "This is a large category, so command descriptions are not displayed."
+	},
+	"suggest": {
+		"description": "Suggest something be added to the bot!",
+		"usage": "Suggestion Title | Suggestion Description",
+		"missingTitle": "Missing suggestion title. Separate a title a description with a pipe (|).",
+		"missingDescription": "Missing suggestion description. Separate a title a description with a pipe (|).",
+		"done": "Your suggestion was successfully posted.\nYou can join our support server (<{0}>), and vote on it in <#805575598994620467>."
+	},
+	"prefix": {
+		"description": "List this servers prefix, or change my prefix for this server.",
+		"usage": "[add/remove/list]",
+		"help": {
+			"noInclude": "Do not include the `<>` when running commands.",
+			"main": "This command consists of several subcommands.",
+			"add": "Add a prefix.",
+			"remove": "Remove a prefix.",
+			"list": "List the current prefixes.",
+			"reset": "Reset this servers prefixes."
+		},
+		"add": {
+			"done": "Added the prefix **{0}**. Use `{1}prefix remove {0}` to remove it.",
+			"max": "You may only have **{0}** prefixes. Remove some with `{1}prefix remove` to add more.",
+			"duplicate": "**{0}** is already a prefix in this server. Use `{1}prefix remove {0}` to remove it.\n\nTip: my mentions are included by default, and cannot be removed."
+		},
+		"remove": {
+			"zero": "You cannot have zero prefixes.",
+			"invalid": "This server does not have **{0}** as a prefix. You can list them with `{1}prefix list`.",
+			"done": "Removed the prefix **{0}**. You can still use me via **{1}**, or mentions."
+		},
+		"list": {
+			"title": "Server Prefixes",
+			"mention": "The mention cannot be removed.",
+			"footer": "{0} Total Prefixes | {1}prefix remove <prefix>"
+		},
+		"reset": {
+			"default": "This server is already in a default state.",
+			"confirm": "Are you sure you want to reset this servers prefixes? **yes** or **no**.",
+			"$": "Do not translate yes or no",
+			"cancelled": "Cancelled.",
+			"done": "Reset this servers prefixes. Use **{0}** for my commands, or mention me."
+		}
+	}
+}

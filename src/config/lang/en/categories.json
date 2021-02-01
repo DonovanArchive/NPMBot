@@ -1,0 +1,18 @@
+{
+	"developer": {
+		"displayName": "🛠 Developer",
+		"description": "Tools to make development easy and smooth."
+	},
+	"information": {
+		"displayName": "ℹ️ Information",
+		"description": "Get some information about me."
+	},
+	"misc": {
+		"displayName": "🛠 Miscellaneous",
+		"description": "Other miscellaneous commands."
+	},
+	"npm": {
+		"displayName": "<:npm:805596321510588446> NPM",
+		"description": "Get information about packages on npm."
+	}
+}

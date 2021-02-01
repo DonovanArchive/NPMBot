@@ -1,0 +1,8 @@
+[{
+		"type": "custom",
+		"subType": null,
+		"name": "Language",
+		"dbName": "lang",
+		"description": "Sets the language the bot will use in this server (english only currently)."
+	}
+]
