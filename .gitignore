@@ -74,8 +74,6 @@ test/
 # vsc
 .vscode
 
-*package-lock*
-
 # ignore .files/folders
 .*
 
