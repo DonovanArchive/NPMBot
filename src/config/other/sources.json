@@ -3,5 +3,6 @@
 	"bot": "eyJzb3VyY2UiOiJib3QiLCJjcmVhdGlvblRpbWUiOjE2MTIxMzIwNTc1MTZ9",
 	"botapi": "eyJzb3VyY2UiOiJib3RhcGkiLCJjcmVhdGlvblRpbWUiOjE2MTIxMzIwNTc1MTZ9",
 	"api": "eyJzb3VyY2UiOiJhcGkiLCJjcmVhdGlvblRpbWUiOjE2MTIxMzIwNTc1MTZ9",
-	"other": "eyJzb3VyY2UiOiJvdGhlciIsImNyZWF0aW9uVGltZSI6MTYxMjEzMjA1NzUxNn0"
+	"other": "eyJzb3VyY2UiOiJvdGhlciIsImNyZWF0aW9uVGltZSI6MTYxMjEzMjA1NzUxNn0",
+	"dbl": "eyJzb3VyY2UiOiJkYmwiLCJjcmVhdGlvblRpbWUiOjE2MTIxNTUwMDY2MTR9"
 }
