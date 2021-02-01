@@ -128,6 +128,10 @@
 			"description": "The specified channel was not found. Please provide either a mention, a name, or an id."
 		}
 	},
+	"general": {
+		"notFound": "We couldn't find **{0}**@**{1}**",
+		"parseError": "We couldn't parse **{0}** into a valid package[@version] string."
+	},
 	"help": {
 		"green": "green (plus) = needed",
 		"red": "red (minus) = not needed"
@@ -211,9 +215,5 @@
 	"slashNotEnabled": "Slash commands are not enabled in this server. Have a moderator run `{0}settings slash commands enabled` to enable them.\n\nWarning: Slash commands are in **beta**, and may have unexpected side effects, or not work properly.",
 	"test1": "hi",
 	"test2": "HELL{0}",
-	"test3": "what's up",
-	"general": {
-		"notFound": "We couldn't find **{0}**@**{1}**",
-		"parseError": "We couldn't parse **{0}** into a valid package[@version] string."
-	}
+	"test3": "what's up"
 }

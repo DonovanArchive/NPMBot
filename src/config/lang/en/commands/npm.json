@@ -1,17 +1,17 @@
 {
-	"info": {
+	"bugs": {
 		"usage": "<package-name>[@version]",
-		"description": "Get information about a package on npm."
+		"description": "Get a link to a package's bugs url.",
+		"none": "This package has not set a bugs url. Check its [npm](https://npm.im/{0}) to see if they have something there."
 	},
 	"docs": {
 		"usage": "<package-name>[@version]",
 		"description": "Get a link to a package's documentation.",
 		"none": "This package has not set a documentation url. Check its [npm](https://npm.im/{0}) to see if they have something there."
 	},
-	"bugs": {
+	"info": {
 		"usage": "<package-name>[@version]",
-		"description": "Get a link to a package's bugs url.",
-		"none": "This package has not set a bugs url. Check its [npm](https://npm.im/{0}) to see if they have something there."
+		"description": "Get information about a package on npm."
 	},
 	"repo": {
 		"usage": "<package-name>[@version]",

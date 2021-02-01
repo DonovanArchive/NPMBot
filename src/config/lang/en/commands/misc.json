@@ -26,13 +26,6 @@
 		"slashTip": "TIP:\nCommands with a **\\*** beside them have a slash command variant. If your client supports them, and you invited me properly, you can type `/`, then the command and use it there. You can read more about it [here]({0}).",
 		"large": "This is a large category, so command descriptions are not displayed."
 	},
-	"suggest": {
-		"description": "Suggest something be added to the bot!",
-		"usage": "Suggestion Title | Suggestion Description",
-		"missingTitle": "Missing suggestion title. Separate a title a description with a pipe (|).",
-		"missingDescription": "Missing suggestion description. Separate a title a description with a pipe (|).",
-		"done": "Your suggestion was successfully posted.\nYou can join our support server (<{0}>), and vote on it in <#805575598994620467>."
-	},
 	"prefix": {
 		"description": "List this servers prefix, or change my prefix for this server.",
 		"usage": "[add/remove/list]",
@@ -66,5 +59,12 @@
 			"cancelled": "Cancelled.",
 			"done": "Reset this servers prefixes. Use **{0}** for my commands, or mention me."
 		}
+	},
+	"suggest": {
+		"description": "Suggest something be added to the bot!",
+		"usage": "Suggestion Title | Suggestion Description",
+		"missingTitle": "Missing suggestion title. Separate a title a description with a pipe (|).",
+		"missingDescription": "Missing suggestion description. Separate a title a description with a pipe (|).",
+		"done": "Your suggestion was successfully posted.\nYou can join our support server (<{0}>), and vote on it in <#805575598994620467>."
 	}
 }

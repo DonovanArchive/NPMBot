@@ -12,6 +12,7 @@
     "run": "node index.js",
     "run:beta": "node index.js --force-beta",
     "run:prod": "node index.js --force-prod",
+    "sort-lang": "ts-node scripts/sort-lang",
     "circ": "dpdm --tree=false --circular=true --warning=false -T .",
     "lint": "eslint src --ext .ts --fix"
   },
