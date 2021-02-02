@@ -77,7 +77,15 @@ declare namespace NPM {
 			created: string;
 			modified: string;
 			[k: string]: string;
-		};
+		} & {
+			unpublished?: {
+				name: string;
+				time: string;
+				tags: Record<string, string>;
+				versions: string[];
+				maintainers: User[];
+			};
+		}
 		maintainers: User[];
 		contributors?: User[];
 		description: string;

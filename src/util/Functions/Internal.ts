@@ -10,7 +10,6 @@ import Language, { Languages } from "../Language";
 import JSON5 from "json5";
 import ts from "typescript";
 import fetch from "node-fetch";
-import { DiscordRESTError } from "eris";
 
 export default class Internal {
 	private constructor() {

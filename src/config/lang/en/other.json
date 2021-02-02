@@ -130,7 +130,8 @@
 	},
 	"general": {
 		"notFound": "We couldn't find **{0}**@**{1}**",
-		"parseError": "We couldn't parse **{0}** into a valid package[@version] string."
+		"parseError": "We couldn't parse **{0}** into a valid package[@version] string.",
+		"unpublished": "This package was unpublished by **{0}** on {1} at {2}."
 	},
 	"help": {
 		"green": "green (plus) = needed",

@@ -103,4 +103,8 @@ export default class NPM {
 			latest: all.sort().reverse()[0]
 		}
 	}
+
+	static scopedParsing(str: string) {
+		return /^(?!@).*\/.*$/.test(str) ? `@${str}` : str;
+	}
 }
